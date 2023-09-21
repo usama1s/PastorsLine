@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import MainScreen from "./screens/MainScreen";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={MainScreen} />
+      </Switch>
+    </Router>
   );
 }
 
